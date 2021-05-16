@@ -12,12 +12,12 @@
 
     <div id="content">
         <div class="login-signup-page mx-auto my-5">
-            <!--<div class="nrt">
-                <p id="sln" class="nahidr" onclick="myFunction()">Personal</p>
-                <p id="sln2" onclick="myFunction2()">Business</p>
-            </div> -->
+            <div class="nrt text-center mb-4">
+                <button id="sln" class="signup-tab d-inline text-white">Personal</button>
+                <button id="sln2" class="signup-tab d-inline ml-4 text-white">Business</button>
+            </div> 
 
-            <!--- Personal Account ---->
+            <!--- Personal Account -->
             
             <div id="nahid">
                 <h3 class="font-weight-400 text-center">Sign Up <small></small></h3>
@@ -209,51 +209,43 @@
 
 
 
-
-
-            <!--
-            <div id="tania" style="display: none">
-                <h3 class="font-weight-400 text-center">Sign Up <small>(Business)</small></h3>
-                <p class="lead text-center">Your Sign Up information is safe with us.</p>
-                <div class="bg-light shadow-md rounded p-4 mx-2">
-                    <form id="signupForm" method="post">
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="company" required="" placeholder="Company Name">
-                        </div><div class="form-group">
-                            <input type="text" class="form-control" id="firstName" required="" placeholder="First Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="lastName" required="" placeholder="Last Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="emailAddress" required="" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            <input type="phone" class="form-control" id="mobile" required="" placeholder="Mobile">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="address" required="" placeholder="Address">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="country" required="" placeholder="Country">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="password" required="" placeholder="Password">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="confpassword" required="" placeholder="Confirm Password">
-                        </div>
-                        <button class="btn btn-primary btn-block my-4" type="submit">Sign Up</button>
-                    </form>
-                    <p class="text-3 text-muted text-center mb-0">Already have an account? <a class="btn-link" href="login.html">Log In</a></p>
-                </div>
-            </div>
-        </div>--> 
-        <!--- Business Account ---->
-
     </div>
     <!-- Content end -->
+<script type="text/javascript">
+    $('.signup-tab').on('click',function(){
+       var getId=$(this).attr('id');
 
+        if (getId == 'sln'){
+
+            $('#nahid').attr('style','display:block !important');
+            $('#tania').attr('style','display:none !important');
+        } 
+        else if(getId == 'sln2'){
+            $('#nahid').attr('style','display:none !important');
+            $('#tania').attr('style','display:block !important');
+        }
+    });
+</script>
+
+<style type="text/css">
+    .signup-tab{
+        background-color: #177a8a;
+        border-radius: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        font-color:white;
+
+
+    }
+
+    .signup-tab:hover{
+        background-color: #194c54;
+    }
+
+
+</style>
     
 
 {% endblock content %}
