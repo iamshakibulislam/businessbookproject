@@ -27,7 +27,7 @@ SECRET_KEY = '__mjzwl^t$&czf_v+mchp^gw7fig9v8x!$6z_taitg$8$_roqd'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','localhost','profiteebd.com','www.profiteebd.com','3.130.72.33','www.businessbook.ltd','businessbook.ltd','3.136.249.252']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -88,9 +88,9 @@ TEMPLATES = [
 WSGI_APPLICATION = 'businessbook_project.wsgi.application'
 
 
-# Database
+# test database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-
+'''
 
 DATABASES = {
     'default': {
@@ -98,6 +98,23 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+'''
+
+
+#production db
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'bdinahrd_investment',
+        'USER': 'bdinahrd_mehedi211',
+        'PASSWORD': 'Mehedi211',
+        'HOST': 'localhost',}
+       
+}
+
+
+#end of production db
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -138,16 +155,24 @@ USE_TZ = True
 
 
 
-
+'''
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR,'statics')
 STATICFILES_DIRS = [os.path.join(BASE_DIR,'static_files')]
 
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL = '/media/'
+'''
 
+#production file managemnet 
+STATIC_URL = '/static/'
+STATIC_ROOT = '/home/bdinahrd/investment-project/statics'
+STATICFILES_DIRS = ['/home/bdinahrd/investment-project/static_files']
 
+MEDIA_ROOT = '/home/bdinahrd/public_html/media'
+MEDIA_URL = '/media/'
 
+#end of production file management
 
 
 
