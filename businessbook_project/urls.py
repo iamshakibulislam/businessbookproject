@@ -22,7 +22,7 @@ from django_email_verification import urls as mail_urls
 from . import views
 
 urlpatterns = [
-	path('',TemplateView.as_view(template_name='index.html'),name='index'),
+	path('',TemplateView.as_view(template_name='new_template/index.html'),name='index'),
     path('admin/', admin.site.urls),
     path('dashboard/',include('dashboard.urls')),
     path('accounts/',include('accounts.urls')),

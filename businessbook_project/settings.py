@@ -90,8 +90,8 @@ WSGI_APPLICATION = 'businessbook_project.wsgi.application'
 
 # test database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-'''
 
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -102,7 +102,10 @@ DATABASES = {
 '''
 
 
+
+
 #production db
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -112,6 +115,8 @@ DATABASES = {
         'HOST': 'localhost',}
        
 }
+
+
 
 
 #end of production db
@@ -154,8 +159,8 @@ USE_TZ = True
 
 
 
-
 '''
+
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR,'statics')
 STATICFILES_DIRS = [os.path.join(BASE_DIR,'static_files')]
@@ -171,7 +176,7 @@ STATICFILES_DIRS = ['/home/bdinahrd/investment-project/static_files']
 
 MEDIA_ROOT = '/home/bdinahrd/public_html/media'
 MEDIA_URL = '/media/'
-
+'''
 #end of production file management
 
 
