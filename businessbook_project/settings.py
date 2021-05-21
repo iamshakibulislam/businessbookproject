@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '__mjzwl^t$&czf_v+mchp^gw7fig9v8x!$6z_taitg$8$_roqd'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -90,8 +90,8 @@ WSGI_APPLICATION = 'businessbook_project.wsgi.application'
 
 # test database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-
 '''
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -159,17 +159,19 @@ USE_TZ = True
 
 
 
-'''
 
+'''
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR,'statics')
 STATICFILES_DIRS = [os.path.join(BASE_DIR,'static_files')]
 
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL = '/media/'
-'''
 
+'''
 #production file managemnet 
+
+
 STATIC_URL = '/static/'
 
 STATIC_ROOT = '/home/bdinahrd/public_html/static/'
