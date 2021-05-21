@@ -171,11 +171,9 @@ MEDIA_URL = '/media/'
 
 #production file managemnet 
 STATIC_URL = '/static/'
-<<<<<<< HEAD
+
 STATIC_ROOT = '/home/bdinahrd/public_html/static/'
-=======
-STATIC_ROOT = '/home/bdinahrd/public_html/static'
->>>>>>> ed00096b5af9b1fa867b08d527961a9176ac58ad
+
 STATICFILES_DIRS = ['/home/bdinahrd/investment-project/static_files']
 
 MEDIA_ROOT = '/home/bdinahrd/public_html/media'
