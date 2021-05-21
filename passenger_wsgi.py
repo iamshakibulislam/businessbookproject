@@ -1,0 +1,1 @@
+from businessbook_project.wsgi import application

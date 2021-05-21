@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '__mjzwl^t$&czf_v+mchp^gw7fig9v8x!$6z_taitg$8$_roqd'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -166,7 +166,7 @@ MEDIA_URL = '/media/'
 
 #production file managemnet 
 STATIC_URL = '/static/'
-STATIC_ROOT = '/home/bdinahrd/investment-project/statics'
+STATIC_ROOT = '/home/bdinahrd/public_html/static/'
 STATICFILES_DIRS = ['/home/bdinahrd/investment-project/static_files']
 
 MEDIA_ROOT = '/home/bdinahrd/public_html/media'
