@@ -90,8 +90,8 @@ WSGI_APPLICATION = 'businessbook_project.wsgi.application'
 
 # test database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-'''
 
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -99,8 +99,8 @@ DATABASES = {
     }
 }
 
-
 '''
+
 
 
 
@@ -167,8 +167,8 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR,'static_files')]
 
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL = '/media/'
-
 '''
+
 #production file managemnet 
 
 
