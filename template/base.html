@@ -26,56 +26,7 @@
     <div id="main-wrapper">
 
         <!-- Header-->
-        <header id="header">
-            <div class="container">
-                <div class="header-row">
-                    <div class="header-column justify-content-start">
-                        <!-- Logo -->
-                        <div class="logo"> <a class="d-flex" href="{% url 'index' %}" title="Pofiteebd - Grow your money"><img src="{% static 'img/logo.png' %}" width="121" height="33" alt="Pofiteebd" /></a> </div>
-                        <!-- Logo end -->
-                        <!-- Collapse Button -->
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-nav"> <span></span> <span></span> <span></span> </button><!-- Collapse Button end -->
-
-                        <!-- Primary Navigation-->
-                        <nav class="primary-menu navbar navbar-expand-lg">
-                            <div id="header-nav" class="collapse navbar-collapse">
-                                <ul class="navbar-nav mr-auto">
-                                    <li><a href="{% url 'index' %}">Home</a></li>
-                                    <li><a href="#">Send</a></li>
-                                    <li><a href="#">Request</a></li>
-                                    <li><a href="{% url 'about-us' %}">About Us</a></li>
-                                    <li><a href="#">Portfolio</a></li>
-                                    <li><a href="{% url 'support' %}">Contact Us</a></li>
-                                    <li class="dropdown"> <a class="dropdown-toggle" href="#">Features</a>
-                                        <ul class="dropdown-menu">
-
-                                            <li><a class="dropdown-item" href="#">Newsroom</a></li>
-                                            <li><a class="dropdown-item" href="#">Jobs</a></li>
-                                            <li><a class="dropdown-item" href="#">Investor Relations</a></li>
-                                            <li><a class="dropdown-item" href="#">Social Innovation</a></li>
-                                            <li><a class="dropdown-item" href="#">Public Policy</a></li>
-                                        </ul>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </nav>
-                        <!-- Primary Navigation end -->
-                    </div>
-
-                    <div class="header-column justify-content-end">
-                        <!-- Login & Signup Link -->
-                        <nav class="login-signup navbar navbar-expand">
-                            <ul class="navbar-nav">
-                                <li><a href="{% url 'login' %}">Login</a> </li>
-                                <li class="align-items-center h-auto ml-sm-3"><a class="btn btn-primary d-none d-sm-block" href="{% url 'signup' %}">Sign Up</a></li>
-                            </ul>
-                        </nav>
-                        <!-- Login & Signup Link end -->
-                    </div>
-                </div>
-            </div>
-        </header>
+       
         <!-- Header End -->
     </div>
     <!-- Content -->
@@ -100,44 +51,6 @@
     <!--- Main Content Section End -->
 
     <!-- Footer -->
-    <footer id="footer">
-        <!-- Content -->
-
-    <div class="nf">
-        <div class="nfc">
-            <div class="row" style="margin: 0;">
-                <div class="col"><img class="fl" src="{% static 'img/login_page_logo.png' %}" width=""></div>
-                <div class="col">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="{% url 'index' %}">> Home</a></li>
-                        <li><a href="{% url 'agent' %}">> Agent</a></li>
-                        <li><a href="{% url 'about-us' %}">> About Us</a></li>
-                        <li><a href="{% url 'safety' %}">> Safety & Security</a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h3>Newsletter</h3>
-                    <ul>
-                        <li>Subscribe to our newsletter for get update</li>
-                        <li><input type="email" placeholder="Your Email"></li>
-                        <li><button class="nfb" type="submit">Submit</button></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h3>Contact info</h3>
-                    <ul class="lc">
-                        <li><img src="{% static 'newimage/i5.png' %}"><span>Dhaka, Bangladesh</span></li>
-                        <li><img src="{% static 'newimage/i6.png' %}"><span>support@businessbook.ltd</span></li>
-                        <li><img src="{% static 'newimage/i7.png' %}"><span>0123456789</span></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="nft">
-        © Copyrights 2020 Businessbook
-    </div>
     <style>
         .nf {
             background: #3a1e02;

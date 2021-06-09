@@ -356,7 +356,7 @@ a:hover {
 .header_btn li:last-child a{
   width:130px;
   height:45px;
-  background:#00aaef;
+  background:#06d45f;
   float:left;
   text-align:center;
   cursor:pointer;
@@ -1033,7 +1033,7 @@ a:hover {
 .slider-area .carousel-inner .carousel-item .carousel-captions .content .slider_btn li:last-child a{
   width:150px;
   height:45px;
-  background:#00aaef;
+  background:#06d45f;
   float:left;
   text-align:center;
   cursor:pointer;

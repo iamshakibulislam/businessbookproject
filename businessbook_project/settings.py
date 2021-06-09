@@ -99,8 +99,8 @@ DATABASES = {
     }
 }
 
-'''
 
+'''
 
 
 
@@ -183,7 +183,7 @@ MEDIA_URL = '/media/'
 
 #end of production file management
 
-'''
+
 
 EMAIL_BACKEND ='django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
@@ -206,7 +206,7 @@ DEFAULT_FROM_EMAIL= 'shakil4cash@gmail.com'
 
 
 
-'''
+
 
 '''
 
